@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DS2">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentsActivity"
             android:exported="false" />
         <activity
