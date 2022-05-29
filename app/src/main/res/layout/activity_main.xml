@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background"
+    >
 
     <EditText
         android:id="@+id/nom"
@@ -13,7 +15,15 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Nom étudiant"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:minHeight="48dp"
+        android:layout_margin="12dp"
+        android:drawableStart="@drawable/custom_acc_icon"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"
+        />
 
     <EditText
         android:id="@+id/classe"
@@ -21,11 +31,23 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="classe étudiant"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:minHeight="48dp"
+        android:layout_margin="12dp"
+        android:drawableStart="@drawable/custom_grp_icon"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"
+        />
 
     <Button
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ajouter" />
+        android:text="Ajouter"
+        android:background="@drawable/btn_bg"
+        android:layout_margin="50dp"
+        android:textColor="@color/white"
+        />
 </LinearLayout>

@@ -23,10 +23,10 @@ public class StudentsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_students);
 
-        ls.findViewById(R.id.lst);
+        ls=findViewById(R.id.lst);
 
         Bundle extras=getIntent().getExtras();
-        if(extras!=null)
+        if(extras!= null)
         {
             nom=extras.getString("nom");
             classe= extras.getString("classe");
